@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/css.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="in_box">
+        <div class="cul c1">
+            <div class="op"></div>
+            <div class="zg"></div>
+            <h3>SECTION 1</h3>
+            <span>1</span>
+        </div>
+        <div class="cul c2">
+            <div class="op"></div>
+            <div class="zg"></div>
+            <h3>SECTION 2</h3>
+            <span>2</span>
+        </div>
+        <div class="cul c3">
+            <div class="op"></div>
+            <div class="zg"></div>
+            <h3>SECTION 3</h3>
+            <span>3</span>
+        </div>
+        <div class="cul c4">
+            <div class="op"></div>
+            <div class="zg"></div>
+            <h3>SECTION 4</h3>
+            <span>4</span>
+        </div>
+        <div class="cul c5">
+            <div class="op"></div>
+            <div class="zg"></div>
+            <h3>SECTION 5</h3>
+            <span>5</span>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$(function(){
+    $(".cul").mouseover(function(){
+        $(this).children(".op").fadeOut(200);
+        $(this).siblings().children(".op").fadeIn(200);
+        $(this).children("span").slideDown(200);
+        $(this).siblings().children("span").slideUp(200)
+    });
+    $(".zg").delay(200).eq(0).animate({top:"-100%"},1100);
+    $(".zg").delay(200).eq(1).animate({top:"-100%"},1000);
+    $(".zg").delay(200).eq(2).animate({top:"-100%"},900);
+    $(".zg").delay(200).eq(3).animate({top:"-100%"},800);
+    $(".zg").delay(200).eq(4).animate({top:"-100%"},700);
+    setTimeout(function(){
+        $(".cul").css({backgroundSize: "auto 100%",backgroundPosition: "-140px 0"})
+    },300)
+
+})
+</script>
+</body>
+</html>

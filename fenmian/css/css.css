@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.box{
+    margin:0 auto;
+    padding: 80px 70px;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1F1F1F;
+}
+.in_box{
+    height: 100%;
+    background: #1F1F1F;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.in_box .cul{
+    width: 19.2%;
+    height: 100%;
+    background-size: auto 170%;
+    position: relative;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s linear;
+    background-position: -30px 0;
+}
+.c1{
+    background: url("../img/onepgscr-3.jpg")no-repeat;
+    transition: all 1s linear;
+
+}
+.c2{
+    background: url("../img/onepgscr-1.jpg")no-repeat;
+    transition: all 1s linear;
+}
+.c3{
+    background: url("../img/onepgscr-2.jpg")no-repeat;
+    transition: all 1s linear;
+}
+.c4{
+    background: url("../img/onepgscr-5.jpg")no-repeat;
+    transition: all 1s linear;
+}
+.c5{
+    background: url("../img/onepgscr-4.jpg")no-repeat;
+    transition: all 1s linear;
+}
+.in_box .cul h3{
+    color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.op{
+    width: 100%;
+    height: 100%;
+    background: #1F1F1F;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.zg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F1F1F;
+    z-index: 40;
+}
+span{
+    font-size: 16vw;
+    color: white;
+    position: absolute;
+    bottom:-120px;
+    right: 70px;
+    display: none;
+}
